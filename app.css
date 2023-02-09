@@ -1,0 +1,231 @@
+body {
+  background-color: rgb(10, 10, 10);
+  font-family: Arial;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.crafted-by {
+  text-align: center;
+  color: rgb(255, 190, 77);
+  font-weight: bold;
+}
+.intestazione {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.int-sinistra {
+  flex: 1;
+  margin-top: 3px;
+}
+.int-centro {
+  background: linear-gradient(
+    to right,
+    rgb(70, 143, 58) 25%,
+    rgb(66, 125, 231) 25% 50%,
+    rgb(178, 94, 198) 50% 75%,
+    rgb(205, 87, 69) 75% 100%
+  );
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: rgb(255, 190, 77);
+  flex: 1;
+}
+.int-destra {
+  flex: 1;
+  margin-top: 3px;
+}
+.pic {
+  width: 44px;
+  height: 44px;
+}
+.titolo {
+  color: rgb(10, 10, 10);
+  font-weight: bold;
+  font-size: 15px;
+  white-space: nowrap;
+  text-decoration: underline;
+}
+.tabella {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 12px;
+  row-gap: 12px;
+}
+@media (max-width: 950px) {
+  .tabella {
+    grid-template-columns: 1fr;
+  }
+}
+.riquadro-green {
+  background-color: rgb(70, 143, 58);
+}
+.riquadro-blue {
+  background-color: rgb(66, 125, 231);
+}
+.riquadro-purple {
+  background-color: rgb(178, 94, 198);
+}
+.riquadro-orange {
+  background-color: rgb(205, 87, 69);
+}
+.riquadro-green,
+.riquadro-blue,
+.riquadro-purple,
+.riquadro-orange {
+  border-width: 3px;
+  border-style: solid;
+  border-color: rgb(255, 190, 77);
+  border-radius: 5px;
+  padding-top: 3px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 3px;
+}
+.box-pic {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+}
+.testo-nome,
+.testo-statistics {
+  color: rgb(10, 10, 10);
+  font-weight: bold;
+  font-size: 15px;
+  text-align: left;
+  padding: 4px;
+  text-align: center;
+}
+.box-statistics-green,
+.box-cost-green {
+  background-color: rgb(70, 143, 58);
+}
+.box-statistics-blue,
+.box-cost-blue {
+  background-color: rgb(66, 125, 231);
+}
+.box-statistics-purple,
+.box-cost-purple {
+  background-color: rgb(178, 94, 198);
+}
+.box-cost-orange,
+.box-statistics-orange {
+  background-color: rgb(205, 87, 69);
+}
+
+.box-statistics-green,
+.box-statistics-blue,
+.box-statistics-purple,
+.box-statistics-orange {
+  color: rgb(10, 10, 10);
+  font-weight: bold;
+  font-size: 15px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: rgb(255, 190, 77);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-bottom: 4px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+.box-cost-green,
+.box-cost-blue,
+.box-cost-purple,
+.box-cost-orange {
+  color: rgb(10, 10, 10);
+  font-weight: bold;
+  font-size: 15px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: rgb(255, 190, 77);
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+.testo-costo-upgrade {
+  margin-left: 30px;
+}
+.int-centro-2 {
+  background: rgb(214, 157, 88);
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: black;
+  flex: 1;
+}
+.tabella-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 12px;
+  row-gap: 12px;
+}
+@media (max-width: 1500px) {
+  .tabella-3 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 880px) {
+  .tabella-3 {
+    grid-template-columns: 1fr;
+  }
+}
+.box-scroll {
+  font-size: 15px;
+  background-color: rgb(214, 157, 88);
+  color: black;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 10px;
+}
+.box-immagine {
+  margin-right: 15px;
+}
+.pic-3 {
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+  border-radius: 22px;
+}
+.box-testo {
+  flex: 1;
+}
+.nome-scroll {
+  display: flex;
+  flex-direction: row;
+}
+.rank-scroll {
+  text-align: right;
+}
+.box-stat {
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  padding: 8px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+.stat-scroll {
+  margin-top: 2px;
+  margin-left: 2px;
+}
+.sfondo-rosso {
+  background-color: rgb(167, 61, 61);
+  font-weight: bold;
+}
